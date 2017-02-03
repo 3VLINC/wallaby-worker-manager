@@ -18,9 +18,9 @@ While this is helpful it can get messy trying to keep track of your worker setup
 
 ## Usage
 
-1. Install `npm install wallaby-worker-manager`
+### Install `npm install wallaby-worker-manager`
 
-2. Create a worker class in your project (code shown written in Typescript)
+### Create a worker class in your project (code shown written in Typescript)
 
 ```
 import { GenericWorker } from 'wallaby-worker-manager';
@@ -46,7 +46,7 @@ export class Worker extends GenericWorker {
 }
 ```
 
-3. Update your wallaby.config.js
+### Update your wallaby.config.js
 
 ```
   setup: function(wallaby) {
