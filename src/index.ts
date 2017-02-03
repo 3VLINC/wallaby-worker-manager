@@ -1,7 +1,7 @@
 import { WorkerManager } from './worker-manager';
 import { GenericWorkerConstructor, GenericWorker } from './worker';
 
-export async function Setup<T extends GenericWorker>(wallaby:any, worker: GenericWorkerConstructor<T>) {
+async function Setup<T extends GenericWorker>(wallaby:any, worker: GenericWorkerConstructor<T>) {
 
   wallaby.delayStart();
 
@@ -16,3 +16,5 @@ export async function Setup<T extends GenericWorker>(wallaby:any, worker: Generi
   wallaby.start();
 
 }
+
+export { Setup, GenericWorker };
