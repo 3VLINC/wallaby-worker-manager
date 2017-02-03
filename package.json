@@ -1,0 +1,41 @@
+{
+  "name": "wallaby-worker-manager",
+  "version": "0.1.0",
+  "description": "Manage setup of wallaby workers",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "mocha \"dist/**/*.spec.js\"",
+    "publish": "npm run build",
+    "build": "rimraf dist/* && tsc",
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3VLINC/wallaby-worker-manager.git"
+  },
+  "keywords": [
+    "Wallaby",
+    "Worker"
+  ],
+  "author": "3VL Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3VLINC/wallaby-worker-manager/issues"
+  },
+  "homepage": "https://github.com/3VLINC/wallaby-worker-manager#readme",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.38",
+    "@types/node": "^7.0.4",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.5.4",
+    "testdouble": "^1.11.1",
+    "testdouble-chai": "^0.5.0",
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
