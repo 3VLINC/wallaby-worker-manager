@@ -1,6 +1,6 @@
 {
   "name": "wallaby-worker-manager",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Manage setup of wallaby workers",
   "main": "dist/index.js",
   "typings": "dist/index",
