@@ -6,7 +6,7 @@
   "typings": "dist/index",
   "scripts": {
     "pretest": "npm run build",
-    "test": "mocha \"dist/**/*.spec.js\"",
+    "test": "mocha \"dist/**/*.test.js\"",
     "prepublish": "npm test",
     "build": "rimraf dist/* && tsc",
     "dev": "tsc -w"
